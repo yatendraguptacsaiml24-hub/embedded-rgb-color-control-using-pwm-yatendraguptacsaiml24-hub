@@ -1,133 +1,102 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/LDXstfmX)
-# 🎨 Embedded RGB LED Control System
+# RGB LED Control using Arduino Uno R4 WiFi
 
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Platform](https://img.shields.io/badge/platform-Arduino-orange)
-![Language](https://img.shields.io/badge/language-C++-blue)
+## Introduction
+This project is based on controlling an **RGB LED** using **Arduino Uno R4 WiFi**.
+The main aim of this project is to understand how **digital output** and
+**PWM (Pulse Width Modulation)** work in embedded systems.
 
-
-An embedded RGB LED control system demonstrating both digital (ON/OFF) and analog (PWM-based brightness control) modes for color mixing and intensity modulation.
-
----
-
-## 📑 Table of Contents
-
-- Project Overview
-- Hardware Requirements
-- Software Requirements
-- Wiring Connections
-- Working Principle
-- Code Structure
-- Documentation Requirement
-- Submission Requirements
-- Future Improvements
-- License
+Using this project, we can turn LEDs ON/OFF and also control their brightness.
 
 ---
 
-## 🚀 Project Overview
-
-This project demonstrates RGB LED control using Arduino (Uno R4 recommended).
-
-The system supports:
-
-- Digital color control (HIGH/LOW)
-- PWM brightness control
-- Color mixing
-- Structured serial interaction
-- Doxygen documentation standards
-- Git-based workflow discipline
+## Objectives
+- To understand RGB LED working
+- To learn digital HIGH and LOW control
+- To learn PWM based brightness control
+- To practice Arduino programming
+- To use Git and GitHub for project submission
 
 ---
 
-## 🔧 Hardware Requirements
-
-- Arduino Uno R4
-- RGB LED (Common Cathode recommended)
-- 3 × 220Ω Resistors
-- Breadboard
-- Jumper wires
-- USB cable
+## Components Required
+- Arduino Uno R4 WiFi  
+- RGB LED (Common Cathode)  
+- 3 × 220Ω resistors  
+- Breadboard  
+- Jumper wires  
+- USB cable  
 
 ---
 
-## 💻 Software Requirements
-
-- Arduino IDE
+## Software Used
+- Arduino IDE / PlatformIO
 - Git
-- GitHub Account
+- GitHub
 
 ---
 
-## 🔌 Wiring Connections (Common Cathode RGB)
+## Pin Connections
 
-| RGB Pin | Arduino |
-|---------|----------|
-| Red     | Pin 9    |
-| Green   | Pin 10   |
-| Blue    | Pin 11   |
-| Common  | GND      |
+| LED Color | Arduino Pin |
+|---------|-------------|
+| Red     | 9 |
+| Green   | 10 |
+| Blue    | 11 |
+| Common  | GND |
 
-⚠ Use current-limiting resistors for each color.
-
----
-
-## ⚙ Working Principle
-
-- Digital Mode → Pin HIGH or LOW (Full ON/OFF)
-- Analog Mode → PWM using analogWrite() (0–255)
-- Color mixing achieved by varying RGB intensity
+Each LED pin is connected using a resistor to avoid damage.
 
 ---
 
-## 🧠 Code Structure
+## Working of the Project
 
-The system:
+### Digital Mode
+- The LED is turned ON and OFF using `digitalWrite()`
+- This helps in understanding basic GPIO control
 
-1. Initializes Serial communication
-2. Configures RGB pins as OUTPUT
-3. Implements digital color control
-4. Implements PWM-based brightness control
-5. Displays structured output
-
----
-
-## 📚 Documentation Requirement
-
-Students must include:
-
-- File-level Doxygen block
-- Documentation for:
-  - `setup()`
-  - `loop()`
-- Required tags:
-  - `@file`
-  - `@brief`
-  - `@author`
-  - `@date`
+### PWM Mode
+- Brightness is controlled using `analogWrite()`
+- Values range from **0 to 255**
+- Different brightness values create different colors
 
 ---
 
-## 📊 Submission Requirements
-
-- Minimum 5 meaningful commits
-- Proper commit message format
-- All TODO tasks completed
-- Doxygen documentation included
-- Code must compile successfully
+## Program Explanation
+- `setup()` function initializes serial communication
+- RGB pins are set as OUTPUT
+- `loop()` function controls LED behavior
+- Delay is used so that changes are clearly visible
 
 ---
 
-## 🔮 Future Improvements
-
-- Serial-based color input (R,G,B values)
-- Predefined color patterns
-- Smooth fading transitions
-- IoT-based color control
-- Music reactive lighting system
+## Output
+- Red LED blinks in digital mode
+- RGB LED glows with different brightness levels
+- Multiple colors are observed due to color mixing
 
 ---
 
-## 📜 License
+## Learning Outcome
+- Basic embedded system concepts
+- Practical use of PWM
+- Hands-on Arduino programming
+- Version control using GitHub
 
-This project is licensed under the MIT License.
+---
+
+## Author
+**Yatendra Kumar Gupta**
+
+## Date
+**17 February 2025**
+
+---
+
+## Conclusion
+This project helped me understand how RGB LEDs work using Arduino.
+It is a beginner-friendly project and very useful for learning embedded systems.
+
+---
+
+## License
+This project is created for **academic and learning purposes only**.
