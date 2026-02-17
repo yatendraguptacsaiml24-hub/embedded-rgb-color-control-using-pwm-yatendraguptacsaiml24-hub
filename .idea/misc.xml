@@ -4,7 +4,7 @@
   <component name="PlatformIOSettings">
     <option name="linkedExternalProjectsSettings">
       <PlatformioProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" /> 
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
